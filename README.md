@@ -6,7 +6,7 @@
 - Create and use a Huffman Tree to generate Huffman codes.
 - Encrypt messages and save encrypted files.
 - Shows file size differences (Compression Ratio).
-- Decrypt text from encrypted filesใ
+- Decrypt text from encrypted files.
 - Save the decoded text to a file.
 - Proper file and error handling is provided.
 - Supports Graphical User Interface (GUI) for selecting files and displaying notification messages.
