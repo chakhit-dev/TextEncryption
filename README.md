@@ -1,19 +1,37 @@
-# TextEncryption
- This code is a program used to encode and decode data using the Huffman Encoding technique, which is an encoding that uses the frequency of letters to create the shortest code for the letters with the highest frequency.
+# 🔒 TextEncryption & Compression (Huffman Coding)
 
-# Features
-- Read text files and calculate character frequencies.
-- Create and use a Huffman Tree to generate Huffman codes.
-- Encrypt messages and save encrypted files.
-- Shows file size differences (Compression Ratio).
-- Decrypt text from encrypted files.
-- Save the decoded text to a file.
-- Proper file and error handling is provided.
-- Supports Graphical User Interface (GUI) for selecting files and displaying notification messages.
+A Java desktop application built with **Java Swing** that provides lossless text compression, encoding, and decoding using the **Huffman Coding** algorithm.
 
-# Requirement
-- JDK 23 or last version
-- JRE
+---
 
-# Screenshots
-![App Screenshot](https://i.imgur.com/L9tuLLK.png)
+## 📌 Features
+
+- **Huffman Text Compression:** Encodes arbitrary text files into compact binary representation using character frequency prefix trees.
+- **Decoding & Reconstruction:** Rebuilds and restores original plaintext from encoded data.
+- **Graphical User Interface (GUI):** Simple and intuitive Java Swing interface with dedicated frames for encoding (`EncodeFrame`) and decoding (`DecodeFrame`).
+- **Ant Build Support:** Ready to build and run via standard NetBeans Ant configurations or terminal commands.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java (JDK 8+)
+- **GUI Framework:** Java Swing / AWT
+- **Algorithm:** Huffman Coding (Greedy, Prefix Trees, Frequency Tables)
+- **Build System:** Apache Ant / NetBeans Project Structure
+
+---
+
+## 📂 Project Structure
+
+```text
+TextEncryption/
+├── nbproject/                 # NetBeans project configuration
+├── src/
+│   ├── HuffmanEncode.java     # Core Huffman tree construction & bitwise encoding logic
+│   ├── EncodeFrame.java       # GUI window for compressing/encoding text
+│   ├── EncodeFrame.form       # Swing GUI form definition
+│   ├── DecodeFrame.java       # GUI window for decompressing/decoding text
+│   └── DecodeFrame.form       # Swing GUI form definition
+├── build.xml                  # Apache Ant build script
+└── manifest.mf                # Application manifest
